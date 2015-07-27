@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_one"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_one"
+            android:checked="true"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/sort"
+            android:title="@string/show">
+            <menu>
+                <item
+                    android:id="@+id/chapter"
+                    android:title="@string/chapter"/>
+
+                <item
+                    android:id="@+id/year"
+                    android:title="@string/year"/>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/section"
+            android:title="@string/archive">
+            <menu>
+                <item
+                    android:id="@+id/drawer_favourite"
+                    android:title="@string/saved"/>
+
+                <item
+                    android:id="@+id/drawer_downloaded"
+                    android:title="@string/imp"/>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_one"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_one"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_one"
+            android:title="@string/logout" />
+    </group>
+</menu><!-- From: file:/home/aditya/AndroidStudioProjects/NavigationDrawer/app/src/main/res/menu/drawer_view.xml -->

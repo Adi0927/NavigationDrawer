@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/pre-dexed/debug/classes-bca8dbb2cc458d291156316c9dd69f9fcefc1b1e.jar" />
+    </item>
+    <item
+        jar="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/pre-dexed/debug/classes-2caa1f850d51d815589200bc65434503f6ca21e0.jar" />
+    </item>
+    <item
+        jar="/home/aditya/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-58f4aa026f79e2fa62ba92f23aead7631bc2ae82.jar" />
+    </item>
+    <item
+        jar="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-1a77c43870c95a05515cc73dbc886e877022f871.jar" />
+    </item>
+    <item
+        jar="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/home/aditya/AndroidStudioProjects/NavigationDrawer/app/build/intermediates/pre-dexed/debug/classes-f64382ef0cca4dbded21c136b6b6268054704773.jar" />
+    </item>
+
+</items>

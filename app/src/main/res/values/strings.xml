@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QPs</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="about">About QPs</string>
+    <string name="home">Home</string>
+    <string name="show">Show</string>
+    <string name="year">Year-wise</string>
+    <string name="chapter">Chapter-wise</string>
+    <string name="archive">Archive</string>
+    <string name="saved">Saved Questions</string>
+    <string name="imp">Important Questions</string>
+    <string name="settings">Settings</string>
+    <string name="help"><![CDATA[Help & feedback]]></string>
+    <string name="logout">Logout</string>
+</resources>
