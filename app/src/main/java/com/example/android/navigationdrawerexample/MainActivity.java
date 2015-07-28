@@ -12,8 +12,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import com.example.android.navigationdrawerexample.fragments.AboutFragment;
 import com.example.android.navigationdrawerexample.fragments.ChapterFragment;
 import com.example.android.navigationdrawerexample.fragments.HelpFragment;
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
     NavigationView nvDrawer;
-
+    MenuItem mPreviousMenuItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +92,14 @@ public class MainActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
-                        selectDrawerItem(menuItem);
+                        menuItem.setCheckable(true);
+                        menuItem.setChecked(true);
+                        if (mPreviousMenuItem != null) {
+                            mPreviousMenuItem.setChecked(false);
+                        }
+                        mPreviousMenuItem = menuItem;
+                        //...
+                        selectDrawerItem(mPreviousMenuItem);
                         return true;
                     }
                 });
@@ -143,7 +152,10 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager.beginTransaction().replace(R.id.container_body, fragment).commit();
 
         // Highlight the selected item, update the title, and close the drawer
-        menuItem.setChecked(true);
+        Log.i("fuck", menuItem.toString()+menuItem.isChecked()+"");
+//        menuItem.setChecked(true);
+//        menuItem.setChecked(true);
+//        Log.i("fuck", menuItem.toString() + menuItem.isChecked() + "");
         mToolbar.setTitle(menuItem.getTitle());
         drawerLayout.closeDrawers();
     }

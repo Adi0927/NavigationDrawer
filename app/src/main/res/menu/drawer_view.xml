@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/about"
             android:icon="@drawable/ic_one"
-            android:title="@string/about" />
+            android:title="@string/about"
+            android:checkable="true"/>
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_one"
@@ -16,10 +17,12 @@
             <menu>
                 <item
                     android:id="@+id/chapter"
+                    android:checkable="true"
                     android:title="@string/chapter"/>
 
                 <item
                     android:id="@+id/year"
+                    android:checkable="true"
                     android:title="@string/year"/>
             </menu>
         </item>
@@ -29,24 +32,28 @@
             <menu>
                 <item
                     android:id="@+id/saved"
+                    android:checkable="true"
                     android:title="@string/saved"/>
 
                 <item
                     android:id="@+id/imp"
+                    android:checkable="true"
                     android:title="@string/imp"/>
             </menu>
         </item>
         <item
             android:id="@+id/settings"
             android:icon="@drawable/ic_one"
-            android:title="@string/settings" />
+            android:title="@string/settings"
+            android:checkable="true"/>
         <item
             android:id="@+id/help"
             android:icon="@drawable/ic_one"
-            android:title="@string/help" />
+            android:title="@string/help"
+            android:checkable="true"/>
         <item
             android:id="@+id/logout"
             android:icon="@drawable/ic_one"
-            android:title="@string/logout" />
-    </group>
+            android:title="@string/logout"
+            android:checkable="true"/>
 </menu>
