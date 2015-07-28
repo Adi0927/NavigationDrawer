@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Tie DrawerLayout events to the ActionBarToggle
         drawerLayout.setDrawerListener(drawerToggle);
-        everyTime();
     }
 
     private ActionBarDrawerToggle setupDrawerToggle() {
@@ -98,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
                             mPreviousMenuItem.setChecked(false);
                         }
                         mPreviousMenuItem = menuItem;
-                        //...
                         selectDrawerItem(mPreviousMenuItem);
                         return true;
                     }

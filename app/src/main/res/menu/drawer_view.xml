@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <group android:checkableBehavior="single" android:id="@+id/nav1_menu_primary">
         <item
             android:id="@+id/about"
             android:icon="@drawable/ic_one"
@@ -9,38 +9,32 @@
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_one"
-            android:checked="true"
+            android:checkable="true"
             android:title="@string/home" />
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/sort">
         <item
-            android:id="@+id/sort"
-            android:title="@string/show">
-            <menu>
-                <item
-                    android:id="@+id/chapter"
-                    android:checkable="true"
-                    android:title="@string/chapter"/>
+            android:id="@+id/chapter"
+            android:checkable="true"
+            android:title="@string/chapter"/>
 
-                <item
-                    android:id="@+id/year"
-                    android:checkable="true"
-                    android:title="@string/year"/>
-            </menu>
-        </item>
         <item
-            android:id="@+id/archive"
-            android:title="@string/archive">
-            <menu>
-                <item
-                    android:id="@+id/saved"
-                    android:checkable="true"
-                    android:title="@string/saved"/>
+            android:id="@+id/year"
+            android:checkable="true"
+            android:title="@string/year"/>
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/archive">
+        <item
+            android:id="@+id/saved"
+            android:checkable="true"
+            android:title="@string/saved"/>
 
-                <item
-                    android:id="@+id/imp"
-                    android:checkable="true"
-                    android:title="@string/imp"/>
-            </menu>
-        </item>
+        <item
+            android:id="@+id/imp"
+            android:checkable="true"
+            android:title="@string/imp"/>
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/nav2_menu_primary">
         <item
             android:id="@+id/settings"
             android:icon="@drawable/ic_one"
@@ -56,4 +50,5 @@
             android:icon="@drawable/ic_one"
             android:title="@string/logout"
             android:checkable="true"/>
+    </group>
 </menu>
