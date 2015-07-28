@@ -2024,6 +2024,7 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f0c003d;
         public static final int alertTitle=0x7f0c0047;
         public static final int always=0x7f0c002b;
+        public static final int archive=0x7f0c007f;
         public static final int beginning=0x7f0c0029;
         public static final int bottom=0x7f0c001a;
         public static final int buttonPanel=0x7f0c004d;
@@ -2046,8 +2047,6 @@ containing a value of this type.
         public static final int default_activity_button=0x7f0c0040;
         public static final int dialog=0x7f0c0030;
         public static final int disableHome=0x7f0c000d;
-        public static final int drawer_downloaded=0x7f0c0081;
-        public static final int drawer_favourite=0x7f0c0080;
         public static final int drawer_layout=0x7f0c0066;
         public static final int dropdown=0x7f0c0031;
         public static final int edit_query=0x7f0c0059;
@@ -2068,6 +2067,7 @@ containing a value of this type.
         public static final int icon=0x7f0c0042;
         public static final int ifRoom=0x7f0c002d;
         public static final int image=0x7f0c003f;
+        public static final int imp=0x7f0c0081;
         public static final int info=0x7f0c0079;
         public static final int left=0x7f0c0024;
         public static final int line1=0x7f0c0073;
@@ -2090,6 +2090,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0c0006;
         public static final int radio=0x7f0c0051;
         public static final int right=0x7f0c0025;
+        public static final int saved=0x7f0c0080;
         public static final int screen=0x7f0c0036;
         public static final int scroll=0x7f0c0017;
         public static final int scrollView=0x7f0c0049;
@@ -2104,7 +2105,6 @@ containing a value of this type.
         public static final int search_plate=0x7f0c005f;
         public static final int search_src_text=0x7f0c0060;
         public static final int search_voice_btn=0x7f0c0064;
-        public static final int section=0x7f0c007f;
         public static final int select_dialog_listview=0x7f0c0065;
         public static final int settings=0x7f0c0082;
         public static final int shortcut=0x7f0c0050;

@@ -24,15 +24,15 @@
             </menu>
         </item>
         <item
-            android:id="@+id/section"
+            android:id="@+id/archive"
             android:title="@string/archive">
             <menu>
                 <item
-                    android:id="@+id/drawer_favourite"
+                    android:id="@+id/saved"
                     android:title="@string/saved"/>
 
                 <item
-                    android:id="@+id/drawer_downloaded"
+                    android:id="@+id/imp"
                     android:title="@string/imp"/>
             </menu>
         </item>

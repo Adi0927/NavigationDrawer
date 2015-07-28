@@ -1,22 +1,28 @@
 package com.example.android.navigationdrawerexample;
 
 
+import android.annotation.TargetApi;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import com.example.android.navigationdrawerexample.fragments.AboutFragment;
+import com.example.android.navigationdrawerexample.fragments.ChapterFragment;
+import com.example.android.navigationdrawerexample.fragments.HelpFragment;
 import com.example.android.navigationdrawerexample.fragments.HomeFragment;
+import com.example.android.navigationdrawerexample.fragments.ImpFragment;
+import com.example.android.navigationdrawerexample.fragments.LogoutFragment;
+import com.example.android.navigationdrawerexample.fragments.SavedFragment;
+import com.example.android.navigationdrawerexample.fragments.SettingsFragment;
+import com.example.android.navigationdrawerexample.fragments.YearFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -63,20 +69,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-
         int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        if (drawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        return id == R.id.action_settings || drawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -88,7 +82,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        // Pass any configuration change to the drawer toggles
         drawerToggle.onConfigurationChanged(newConfig);
     }
 
@@ -114,6 +107,27 @@ public class MainActivity extends AppCompatActivity {
             case R.id.home:
                 fragmentClass = HomeFragment.class;
                 break;
+            case R.id.chapter:
+                fragmentClass = ChapterFragment.class;
+                break;
+            case R.id.year:
+                fragmentClass = YearFragment.class;
+                break;
+            case R.id.saved:
+                fragmentClass = SavedFragment.class;
+                break;
+            case R.id.imp:
+                fragmentClass = ImpFragment.class;
+                break;
+            case R.id.settings:
+                fragmentClass = SettingsFragment.class;
+                break;
+            case R.id.help:
+                fragmentClass = HelpFragment.class;
+                break;
+            case R.id.logout:
+                fragmentClass = LogoutFragment.class;
+                break;
             default:
                 fragmentClass = HomeFragment.class;
         }
@@ -131,21 +145,18 @@ public class MainActivity extends AppCompatActivity {
         // Highlight the selected item, update the title, and close the drawer
         menuItem.setChecked(true);
         mToolbar.setTitle(menuItem.getTitle());
-        Log.i("hell", menuItem.getTitle()+"");
         drawerLayout.closeDrawers();
     }
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     private void everyTime() {
-        Class fragmentClass = HomeFragment.class;;
+        Class fragmentClass = HomeFragment.class;
         Fragment fragment = null;
         try {
             fragment = (Fragment) fragmentClass.newInstance();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
+        } catch (InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         }
-        ;
         FragmentManager fragmentManager = MainActivity.this.getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container_body, fragment).commit();
     }
