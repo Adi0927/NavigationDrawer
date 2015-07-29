@@ -1998,9 +1998,10 @@ containing a value of this type.
         public static final int ic_action_search=0x7f02003d;
         public static final int ic_launcher=0x7f02003e;
         public static final int ic_one=0x7f02003f;
-        public static final int notification_template_icon_bg=0x7f020042;
-        public static final int snackbar_background=0x7f020040;
-        public static final int toolbar_dropshadow=0x7f020041;
+        public static final int notification_template_icon_bg=0x7f020043;
+        public static final int quotes=0x7f020040;
+        public static final int snackbar_background=0x7f020041;
+        public static final int toolbar_dropshadow=0x7f020042;
     }
     public static final class id {
         public static final int about=0x7f0c007d;
